@@ -12,7 +12,7 @@ extension UIImage {
     
     
     //takes an image and resize it
-  
+    
     func resizeImageTo(size: CGSize) -> UIImage? {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
@@ -21,7 +21,6 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return resizedImage
     }
-    
     
     
     //create and return CoreVideo Pixle Buffer

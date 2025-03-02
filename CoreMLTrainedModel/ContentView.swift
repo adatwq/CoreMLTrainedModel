@@ -11,7 +11,7 @@ import CoreML
 struct ContentView: View {
    
     @State private var classificationLabel: String = ""
-   
+    
     let photos = ["pineapple", "strawberry", "lemon", "Dog"]
     @State private var currentIndex: Int = 0
     
@@ -80,19 +80,13 @@ struct ContentView: View {
           
         //Step 1: Create an instance of our model
             
-        
-        
-        
         let model = try? MobileNetV2(configuration: MLModelConfiguration())
             
-     
-        
         //Step 2: Create the input
-        
         
         let currentImage = photos[currentIndex]
         
-            //conver to UIImage
+            //conver it to UIImage
         
         guard let image = UIImage(named: currentImage),  let resizedImage = image.resizeImageTo(size: CGSize(width: 224, height: 224)),
         
@@ -100,9 +94,6 @@ struct ContentView: View {
             
             return
         }
-        
-       
-        
             
        //Step 3: Get the results/output / predict the given input
         
