@@ -16,7 +16,7 @@ struct ContentView: View {
     @State private var currentIndex: Int = 0
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 30) {
             Image(photos[currentIndex])
                 .resizable()
                 .frame(width: 200, height: 200)
@@ -59,7 +59,7 @@ struct ContentView: View {
             .frame(width: 200, height: 60)
             
             .foregroundColor(Color.white)
-            .background(Color.green)
+            .background(Color.yellow)
             .cornerRadius(17)
 
             // The Text View that we will use to display the results of the classification
@@ -88,7 +88,11 @@ struct ContentView: View {
         
             //conver it to UIImage
         
-        guard let image = UIImage(named: currentImage),  let resizedImage = image.resizeImageTo(size: CGSize(width: 224, height: 224)),
+        guard let image = UIImage(named: currentImage),  let resizedImage = image.resizeImageTo(size: CGSize(width: 224, height: 224)
+        
+        
+        
+        ),
         
         let buffer = resizedImage.convertToBuffer() else{
             
@@ -114,42 +118,7 @@ struct ContentView: View {
         
     
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        //Take the current index, Convert our image into UIImage
-
-        //then: resize our image(since the model expects a certain image size)
-       //Convert the image into CoreVideo pixle buffer
-        
-        
-        
-        
-        
-            //take the output and assign it to the classLabel
-            
-           
-            
-          
-             
-        
-        
-        //assign results to our classficationLabel in the UI
-        
+       
         
        
     }
