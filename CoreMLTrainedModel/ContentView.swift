@@ -73,11 +73,6 @@ struct ContentView: View {
     }
     
     private func classifyImage() {
-        
-      
-        
-     
-          
         //Step 1: Create an instance of our model
             
         let model = try? MobileNetV2(configuration: MLModelConfiguration())
