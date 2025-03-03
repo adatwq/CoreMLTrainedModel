@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
-//  CoreMLwithSwiftUI
+//  View.swift
+//  CoreMLTrainedModel
 //
-//  Created by shahadmufleh on 20/02/2025.
+//  Created by shahadmufleh on 03/03/2025.
 //
 
 import SwiftUI
